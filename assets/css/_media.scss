@@ -1,0 +1,123 @@
+@media (max-width: 999px) {
+  .navbar {
+    .hamburger {
+      display: block !important;
+    }
+
+    &.scrolled {
+      .navbar-nav {
+        height: calc(100vh - 87px);
+        top: 87px;
+      }
+    }
+
+    .buttons-contain {
+      display: none !important;
+    }
+    .content {
+      position: unset !important;
+    }
+    .navbar-nav {
+      width: 100%;
+      height: calc(100vh - 120px);
+      top: 120px;
+      right: -100% !important;
+      position: absolute !important;
+      background-color: #1B1915;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      align-items: flex-start;
+      align-content: flex-start;
+      padding: 20px 10px;
+      transition: all .3s linear;
+
+      &.active-nav {
+        right: 0% !important;
+      }
+
+      .nav-item {
+        width: 100%;
+        padding: 20px 0px;
+        margin: 0px;
+        border-bottom: 1px solid #ddd;
+
+        .nav-link {
+          width: 100% !important;
+        }
+
+        .product-contain {
+          width: 100%;
+          z-index: 999 !important;
+          top: 0px !important;
+          padding-bottom: 150px !important;
+          height: 100vh;
+          overflow-y: scroll !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          box-shadow: 0px 0px 0px transparent !important;
+          transform: translateY(0px) !important;
+          right: -100%;
+          transition: all .3s linear;
+
+          .close-product-contain {
+            display: block !important;
+          }
+
+          &::-webkit-scrollbar-track,
+          &::-webkit-scrollbar-thumb, 
+          &::-webkit-scrollbar-thumb:hover {
+            background: transparent !important;
+          }
+
+          &.active-product {
+            right: 0px !important;
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    padding: 200px 0px 100px;
+    background-position: top right !important;
+  }
+
+  .services .service-contain {
+    &::after {
+      display: none !important;
+    }
+
+    .box {
+      .image-content {
+        width: 130px;
+        height: 130px;
+      }
+
+      h2 {
+        font-size: 15px !important;
+      }
+    }
+  }
+
+  .data-contact {
+    .border-shape {
+      margin-bottom: 50px !important;
+  
+      &::after {
+        width: 100% !important;
+        height: 1px !important;
+        bottom: -20px !important;
+        top: unset !important;
+        left: 0px !important;
+      }
+    }
+  
+    h2 {
+      font-size: 15px !important;
+    }
+  }
+  
+  .questions .question-contain h2 {
+    font-size: 20px !important;
+  }
+}
