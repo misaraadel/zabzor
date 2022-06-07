@@ -1385,9 +1385,9 @@ ul {
      object-fit: contain;
 }
 
-.navbar .content .navbar-nav .nav-item.product-cat .product-contain .contain h2 {
+.navbar .content .navbar-nav .nav-item.product-cat .product-contain .contain .head {
   color: #CB1E0F;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 900;
   margin-bottom: 30px;
 }
