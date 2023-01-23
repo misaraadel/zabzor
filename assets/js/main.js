@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('.loader').fadeOut(5000);
     $(window).scroll(function () {
         if ($(this).scrollTop() > 700) {
             $(".scroll-top-button").fadeIn();
