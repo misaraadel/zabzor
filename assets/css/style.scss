@@ -24,7 +24,6 @@
       font-size: 18px;
       font-weight: 700;
       color: #000;
-      border: 1px solid #CB1E0F;
       border-radius: 40px;
       position: relative;
       margin-inline-end: 10px;
@@ -35,6 +34,7 @@
         height: 100%;
         top: 0;
         background-color: #CB1E0F;
+        display: none;
         z-index: -1;
         transition: all .3s linear;
       }
@@ -341,7 +341,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba($color: #000000, $alpha: 0.8);
+    background: rgba($color: #000000, $alpha: 0.2);
     top: 0;
     left: 0;
     z-index: -1;
@@ -510,6 +510,7 @@ header {
     left: 0;
     z-index: -1;
     animation: sliderShape 20s linear infinite;
+    display: none;
   }
 
   .heading {
