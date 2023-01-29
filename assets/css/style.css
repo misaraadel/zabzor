@@ -1616,7 +1616,7 @@ header .content h2 {
 .say {
   width: 100%;
   padding: 50px 0px;
-  background-color: #fff;
+  background-color: #F1F1F1;
   position: relative;
   z-index: 9;
 }
@@ -1629,6 +1629,7 @@ header .content h2 {
   top: 0;
   left: 0;
   z-index: -1;
+  display: none;
   -webkit-animation: sliderShape 20s linear infinite;
           animation: sliderShape 20s linear infinite;
 }
@@ -1678,7 +1679,7 @@ header .content h2 {
 .say .box {
   width: 100%;
   padding: 20px 15px;
-  background-color: #F1F1F1;
+  background-color: #fff;
   border: 1px solid #707070;
   border-radius: 30px;
   display: flex;

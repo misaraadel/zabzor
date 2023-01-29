@@ -722,7 +722,7 @@ header {
 .say {
   width: 100%;
   padding: 50px 0px;
-  background-color: #fff;
+  background-color: #F1F1F1;
   position: relative;
   z-index: 9;
 
@@ -735,6 +735,7 @@ header {
     top: 0;
     left: 0;
     z-index: -1;
+    display: none;
     animation: sliderShape 20s linear infinite;
   }
 
@@ -790,7 +791,7 @@ header {
   .box {
     width: 100%;
     padding: 20px 15px;
-    background-color: #F1F1F1;
+    background-color: #fff;
     border: 1px solid #707070;
     border-radius: 30px;
     display: flex;
