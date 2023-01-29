@@ -1953,7 +1953,7 @@ footer .content .whats span {
   top: 0;
   left: 0;
   z-index: 9999;
-  background: url("../images/intro_shape.jpg") center/cover no-repeat;
+  background: url("../images/intro_shape.jpeg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
