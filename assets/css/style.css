@@ -1117,7 +1117,7 @@ ul {
 }
 .navbar .content .brand-name img {
   width: 230px;
-  height: 60px;
+  height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
   transition: all 0.3s linear;
@@ -1155,7 +1155,7 @@ ul {
 }
 .navbar .content .navbar-nav .nav-item.product-cat .product-contain {
   width: 100%;
-  padding: 30px 20px;
+  padding: 30px 20px 10px;
   box-shadow: 0px 0px 10px rgba(203, 30, 15, 0.2);
   background-color: #1B1915;
   position: absolute;
@@ -1187,13 +1187,53 @@ ul {
   font-size: 20px;
   font-weight: 900;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 9;
+  -webkit-padding-end: 20px;
+          padding-inline-end: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
 }
-.navbar .content .navbar-nav .nav-item.product-cat .product-contain .contain .links-list li a {
-  color: #fff;
+.navbar .content .navbar-nav .nav-item.product-cat .product-contain .contain .head::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: url("../images/arrow.svg") center/contain no-repeat;
+  left: 0px;
+  top: calc(50% - 7.5px);
+  z-index: -1;
+}
+.navbar .content .navbar-nav .nav-item.product-cat .product-contain .contain .sub-list {
+  width: 100%;
+  position: absolute;
+  padding: 20px 10px;
+  background-color: #1B1915;
+  top: 100%;
+  right: 0px;
+  z-index: 99;
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .content .navbar-nav .nav-item.product-cat .product-contain .contain .sub-list li {
+  margin-bottom: 10px;
+}
+.navbar .content .navbar-nav .nav-item.product-cat .product-contain .contain .sub-list li:last-child {
+  margin-bottom: 0px;
+}
+.navbar .content .navbar-nav .nav-item.product-cat .product-contain .contain .sub-list li a {
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 20px;
-  display: block;
+  color: #CB1E0F;
+}
+.navbar .content .navbar-nav .nav-item.product-cat .product-contain .contain:hover .sub-list {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
 }
 .navbar .content .navbar-nav .nav-item.product-cat:hover .product-contain {
   transform: translateY(0px);
@@ -1278,7 +1318,7 @@ header::after {
   z-index: -1;
 }
 header.sub-header {
-  padding: 200px 0px 100px;
+  padding: 350px 0px 100px;
 }
 header .content h1 {
   font-size: 40px;
@@ -1530,8 +1570,8 @@ header .content h2 {
 .graph .graph-step li {
   width: 100%;
   display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items: center;
+  align-content: center;
   justify-content: space-between;
   margin-bottom: 60px;
 }

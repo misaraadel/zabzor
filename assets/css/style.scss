@@ -154,7 +154,7 @@
 
     .brand-name img {
       width: 230px;
-      height: 60px;
+      height: 100px;
       object-fit: contain;
       transition: all .3s linear;
     }
@@ -195,7 +195,7 @@
 
           .product-contain {
             width: 100%;
-            padding: 30px 20px;
+            padding: 30px 20px  10px;
             box-shadow: 0px 0px 10px rgba($color: #CB1E0F, $alpha: 0.2);
             background-color: #1B1915;
             position: absolute;
@@ -228,15 +228,57 @@
                 font-size: 20px;
                 font-weight: 900;
                 margin-bottom: 30px;
+                position: relative;
+                z-index: 9;
+                padding-inline-end: 20px;
+                width: fit-content;
+                display: flex;
+
+                &::after {
+                  content: '';
+                  position: absolute;
+                  width: 15px;
+                  height: 15px;
+                  background: url('../images/arrow.svg') center / contain no-repeat;
+                  left: 0px;
+                  top: calc(50% - 7.5px);
+                  z-index: -1;
+                }
               }
 
-              .links-list {
-                li a{
-                  color: #fff;
-                  font-size: 15px;
-                  font-weight: 500;
-                  margin-bottom: 20px;
-                  display: block;
+              .sub-list {
+                width: 100%;
+                position: absolute;
+                padding: 20px 10px;
+                background-color: #1B1915;
+                top: 100%;
+                right: 0px;
+                z-index: 99;
+                transform: translateY(30px);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+                
+                li {
+                  margin-bottom: 10px;
+
+                  &:last-child {
+                    margin-bottom: 0px;
+                  }
+
+                  a {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #CB1E0F;
+                  }
+                }
+              }
+
+              &:hover {
+                .sub-list {
+                  transform: translateY(0px);
+                  opacity: 1;
+                  visibility: visible;
                 }
               }
             }
@@ -348,7 +390,7 @@ header {
   }
 
   &.sub-header {
-    padding: 200px 0px 100px;
+    padding: 350px 0px 100px;
   }
 
   .content {
@@ -624,8 +666,8 @@ header {
     li {
       width: 100%;
       display: flex;
-      align-items: flex-start;
-      align-content: flex-start;
+      align-items: center;
+      align-content: center;
       justify-content: space-between;
       margin-bottom: 60px;
 
