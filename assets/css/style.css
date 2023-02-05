@@ -2050,6 +2050,23 @@ footer .content .whats span {
           animation: tada 0.3s linear both;
 }
 
+.bold-link {
+  font-weight: 900;
+  text-decoration: underline !important;
+  color: #000;
+}
+.bold-link:hover {
+  color: #000;
+}
+
+.normal-link {
+  font-weight: 500;
+  color: #000;
+}
+.normal-link:hover {
+  color: #000;
+}
+
 @media (max-width: 999px) {
   .navbar .hamburger {
     display: block !important;

@@ -1192,4 +1192,22 @@ footer {
   }
 }
 
+.bold-link {
+  font-weight: 900;
+  text-decoration: underline !important;
+  color: #000;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.normal-link {
+  font-weight: 500;
+  color: #000;
+  &:hover {
+    color: #000;
+  }
+}
+
 @import 'media';
